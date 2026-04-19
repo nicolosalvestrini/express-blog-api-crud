@@ -8,7 +8,7 @@ app.use('/posts', postRouter)
 app.use(express.static('public'))
 
 app.get('/', (req,res) => {
-
+ res.json('benvenuti nella mia api')
 }) 
 
 app.listen(port, () => {
